@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Research Project Presentation</title>
+
+		<meta name="description" content="Literature Review">
+		<meta name="author" content="Matt Grifiths">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="Reveal/css/reveal.css">
+		<link rel="stylesheet" href="Reveal/css/theme/griff-custom-1.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="Reveal/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'Reveal/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+		<script type="text/javascript" src="Reveal/js/reveal.js">
+		</script>
+
+		<style type="text/css">
+			.bigImg {
+				height: 65vh;
+			}
+		</style>
+
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-background="Reveal/img/iceberg_fixed.jpg">
+						<h1>Glacial Climate Variability</h1>
+						<h3>Literature Review</h3>
+
+						<p>
+							<small>Matt Griffiths</small>
+						</p>
+				</section>
+
+				<section>
+					<h3>Experimental data</h3>
+				    <section>
+				    	<ul>
+				    		<li>In 2012 the PALAEOSENS project team published a paper in Nature</li></br>
+				    		<li>They outlined new findings linking the variability of the Earth's temperature to global glaciation periods</li></br>
+				    		<li>They failed to produce a working theory which explained these fluctuations</li>
+				    	</ul>
+					</section>
+				    <section>
+				        <center>
+					    	<img class="bigImg" src="Reveal/img/variability.png">
+					    	<small>
+						    PALAEOSENS, Making sense of palaeoclimate sensitivity, Nature, 2012, doi 10.1038, issue 11574
+					    	</small>
+				    	</center>
+					</section>
+				</section>
+				<section>
+					<section>
+					    <h3>Determining the cause</h3>
+				    	<ul>
+				    		<li>In 2014 Von der Heydt proposed a variety of climate subsystems which operate on the appropriate timescale to be linked to the PALAEOSENS data.</li></br>
+				    		<li>In 2015 Köhler determined that the physical phenomena responsible for climate variability was most likely combination of a temperature dependent albedo and light scattering in the atmosphere.
+				    		</li>
+				    	</ul>
+					</section>
+					<section>
+					    <h3>This leaves us with:</h3>
+						<ul>
+							<li>Multiple anomalies in experimentally recorded archeological climate data</li></br>
+							<li>A series of specific physical phenomena which could increase climate variance</li></br>
+							<li>A list of climate subsystems which could modulate the driving mechanisms</li>
+						</ul>
+					</section>
+					<section>
+					    <h3>The gap in the theory: </h3>
+						<p>However there is no currently accepted physical model relating the climate subsystems to the driving mechanisms directly.</p>
+						<p>This leaves a hole in the current understanding of glacial period climate behavior</p>
+					</section>
+				</section>
+
+				<section>
+				    <h2>Paper citations</h2>
+				    <small>
+					<ul>
+					    <li>PALAEOSENS, <i>Making sense of palaeoclimate sensitivity</i>,  Nature, 2012, doi 10.1038, issue 11574 </li>
+					    <li>P. Köhler et. al., <i>On the state-dependency of the equilibrium climate sensitivity during last 5 million years</i>,  Clim. Past., 2014, vol 11 </li>
+					    <li>A. S. von der Heydt et. al., <i>On the state dependency of fast feedback processes in (paleo) climate sensitivity.</i>,  GeoPhys. Res. Let., 2015, vol 10, issue 1002 </li>
+					</ul>
+					</small>
+				</section>
+			</div>
+		</div>
+
+		<script src="Reveal/lib/js/head.min.js"></script>
+		<script src="Reveal/js/reveal.js"></script>
+
+
+
+		<script>
+
+			// More info on reveal.js at https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				math: {
+			        mathjax: 'https://cdn.mathjax.org/mathjax/latest/MathJax.js',
+			        config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+			    },
+
+				dependencies: [
+					{ src: 'Reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'Reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'Reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'Reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'Reveal/plugin/zoom-js/zoom.js', async: true },
+					{ src: 'Reveal/plugin/notes/notes.js', async: true },
+                    { src: 'Reveal/plugin/math/math.js', async: true }
+				],
+
+			});
+
+		</script>
+	</body>
+</html>
